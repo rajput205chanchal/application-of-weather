@@ -68,3 +68,4 @@ searchButton.addEventListener("click", async () => {
     );
   }
 });
+
