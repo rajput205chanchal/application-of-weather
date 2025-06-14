@@ -60,6 +60,7 @@ searchButton.addEventListener("click", async () => {
     visibility.textContent = `Visibility: ${data.visibility / 1000} km`;
     cloudiness.textContent = `Cloudiness: ${data.clouds.all}%`;
 
+<<<<<<< HEAD
     weatherInfo.style.display = "block";
   } catch (error) {
     console.error("Error fetching weather data:", error);
@@ -68,3 +69,179 @@ searchButton.addEventListener("click", async () => {
     );
   }
 });
+=======
+            <!-- Feature 2 -->
+            <div class="text-center">
+              <img
+                src="https://plus.unsplash.com/premium_vector-1711987379150-4a797da6fca5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8R2xvYmFsJTIwQ292ZXJhZ2V8ZW58MHwwfDB8fHww"
+                alt="Global Coverage"
+                class="w-20 h-20 mx-auto mb-4"
+              />
+              <h3 class="text-2xl font-semibold text-blue-600 mb-2">
+                Global Coverage
+              </h3>
+              <p class="text-blue-700">
+                No matter where you are, Weather Now provides reliable weather
+                information for cities around the world.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="text-center">
+              <img
+                src="https://plus.unsplash.com/premium_vector-1737604356456-89220be9f8db?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fFVzZXIlMjBGcmllbmRseXxlbnwwfDB8MHx8fDA%3D"
+                alt="User-Friendly"
+                class="w-20 h-20 mx-auto mb-4"
+              />
+              <h3 class="text-2xl font-semibold text-blue-600 mb-2">
+                User-Friendly
+              </h3>
+              <p class="text-blue-700">
+                Designed with simplicity in mind, Weather Now ensures that you
+                get the information you need quickly and easily.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-12">
+            <p class="text-lg text-blue-700">
+              With Weather Now, you'll always be prepared for whatever the
+              weather brings. Our app makes checking the weather easy, fast, and
+              reliable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- your city weather -->
+    <div id="wheather-info" class="flex justify-center bg-blue-900">
+      <div
+        class="text-white z-50 p-20 mx-auto flex flex-col justify-center items-center text-center"
+      >
+        <!-- Heading -->
+        <h1 class="lg:text-6xl text-4xl font-bold mb-4">Search Weather Now!</h1>
+
+        <!-- Description -->
+        <p class="text-xl mb-6">
+          Get accurate and real-time weather updates wherever you are.
+        </p>
+
+        <!-- Search for Location -->
+        <div
+          class="flex justify-center items-center bg-white md:p-4 p-2 rounded-full w-full max-w-lg"
+        >
+          <input
+            type="text"
+            placeholder="Enter your city..."
+            class="search-input w-full p-2 rounded-l-full border-none text-blue-700"
+          />
+          <button
+            class="search-button bg-blue-600 text-white p-2 rounded-r-full hover:bg-blue-700"
+          >
+            Search
+          </button>
+        </div>
+
+        <div
+          id="weather-info"
+          class="mt-8 text-white p-6 rounded-lg shadow-lg bg-opacity-70"
+        >
+          <div
+            id="city-name"
+            class="text-3xl font-semibold mb-2 text-center"
+          ></div>
+          <div id="weather-location" class="text-xl mb-2 text-center"></div>
+          <div
+            id="weather-temperature"
+            class="text-4xl font-bold mb-2 text-center"
+          ></div>
+          <div
+            id="weather-description"
+            class="text-2xl mb-4 text-center flex justify-center items-center"
+          ></div>
+          <div class="flex justify-between text-xl mb-2">
+            <div id="sunrise" class="text-xl"></div>
+            <div id="sunset" class="text-xl"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 text-xl mb-2">
+            <div id="humidity"></div>
+            <div id="wind-speed"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 text-xl mb-2">
+            <div id="pressure"></div>
+            <div id="visibility"></div>
+          </div>
+          <div id="cloudiness" class="text-xl mb-2 text-center"></div>
+        </div>
+
+        <!-- Image or Icon -->
+        <div class="mt-8">
+          <img
+            src="./assets/logo.png"
+            alt="Weather icon"
+            class="w-32 h-32 mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="grid w-11/12 md:grid-cols-3 mx-auto grid-cols-1 gap-5 py-20">
+      <a
+        href="#"
+        class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+      >
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          7-Day Forecast
+        </h5>
+        <p class="font-normal text-gray-700">
+          Plan your week with confidence. Get daily highs, lows, and chance of
+          precipitation with our reliable 7-day forecast.
+        </p>
+      </a>
+
+      <a
+        href="#"
+        class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+      >
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          Severe Weather Alerts
+        </h5>
+        <p class="font-normal text-gray-700">
+          Stay safe with real-time alerts for storms, floods, and other severe
+          weather conditions in your area.
+        </p>
+      </a>
+
+      <a
+        href="#"
+        class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm"
+      >
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          Weather Facts & Tips
+        </h5>
+        <p class="font-normal text-gray-700">
+          Learn interesting facts about climate, weather patterns, and seasonal
+          tips to help you prepare for changing conditions.
+        </p>
+      </a>
+    </div>
+
+    <footer
+      class="bottom-4 py-4 bg-blue-900 flex flex-col items-center justify-center text-white text-sm"
+    >
+      <p>© 2025 WeatherApp. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="text-blue-300 hover:text-blue-500">Privacy Policy</a>
+        |
+        <a href="#" class="text-blue-300 hover:text-blue-500"
+          >Terms of Service</a
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
+>>>>>>> 3e95f05 (modified index.js)
